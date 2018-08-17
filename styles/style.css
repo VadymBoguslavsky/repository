@@ -1,5 +1,5 @@
 .left {
-  background-image: url(img/depositphotos_32904189-stock-photo-pretty-girl.png);
+  background-image: url(../img/depositphotos_32904189-stock-photo-pretty-girl.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,7 +61,7 @@
 }
 
 .title::before {
-  content: url(img/Векторный\ смарт-объект.png);
+  content: url(../img/Векторный\ смарт-объект.png);
   position: absolute;
   left: -45px;
   top: 95px;

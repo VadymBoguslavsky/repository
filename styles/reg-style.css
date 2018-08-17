@@ -1,10 +1,10 @@
 @font-face {
   font-family: MuseoSans;
-  src: url(MuseoSansCyrl.otf);
+  src: url(../fonts/MuseoSansCyrl.otf);
 }
 
 .left {
-  background-image: url(img/depositphotos_32904189-stock-photo-pretty-girl.png);
+  background-image: url(../img/depositphotos_32904189-stock-photo-pretty-girl.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,7 +72,7 @@
 }
 
 .title::before {
-  content: url(img/Векторный\ смарт-объект.png);
+  content: url(../img/blue-heart.png);
   position: absolute;
   left: -45px;
   top: 95px;
@@ -197,14 +197,14 @@
 .chechmark_first{
   top: 30px;
   left: 0;
-  background-image: url(img/1.png);
+  background-image: url(../img/1.png);
   background-repeat: no-repeat;
   background-position: 50px 10px;
 }
 .chechmark_second{
   top: 30px;
   right: 0;
-  background-image: url(img/2.png);
+  background-image: url(../img/2.png);
   background-repeat: no-repeat;
   background-position: 50px 10px;
 }
