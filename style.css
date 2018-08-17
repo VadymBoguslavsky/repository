@@ -1,0 +1,107 @@
+.left {
+  background-image: url(img/depositphotos_32904189-stock-photo-pretty-girl.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.body-wrapper {
+  display: flex;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif
+}
+
+.right {
+  background-color: #fc5095;
+  display: inline-block;
+  height: 100%;
+  padding-left: 13px;
+  margin-left: -2px;
+}
+
+.menu li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.menu li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3b3b3b;
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  padding: 25px 50px;
+  align-self: flex-end;
+  background-color: rgba(215, 209, 214, 0.6);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner {
+  background-color: white;
+  margin-top: 220px;
+  padding-top: 115px;
+  position: relative;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 32px;
+  color: #fc5095;
+  margin-left: 65px;
+}
+
+.title::before {
+  content: url(img/Векторный\ смарт-объект.png);
+  position: absolute;
+  left: -45px;
+  top: 95px;
+  padding: 10px 8px 2px 8px;
+  background-color: white;
+  border: 13px solid #fc5095;
+  border-radius: 50%
+}
+
+.text {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  color: #3b3b3b;
+  margin-top: 30px;
+  margin-left: 65px;
+}
+
+.begin {
+  margin-top: 170px;
+  margin-left: 65px;
+  text-transform: uppercase;
+  color: #3b3b3b;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.begin button {
+  border: 1px solid #fc5095;
+  padding: 25px 55px;
+  border-radius: 20px;
+  background-color: #fc5095;
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 128px;
+  cursor: pointer;
+}
+
+
+
+
+
+

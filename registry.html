@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Пример веб-страницы</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="reg-style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="body-wrapper">
+    <div class="left">
+      <ul class="menu">
+        <li>
+          <ul class="menu__items">
+            <li>
+              <a href="#">название1</a>
+            </li>
+            <li>
+              <a href="#">название2</a>
+            </li>
+            <li>
+              <a href="#">название3</a>
+            </li>
+            <li>
+              <a href="#">название4</a>
+            </li>
+            <li>
+              <a href="#">очень длинное название5</a>
+            </li>
+          </ul>
+
+        </li>
+
+
+        <li>
+          <ul class="menu__items">
+            <li>
+              <a href="#">очень длинное название6</a>
+            </li>
+            <li>
+              <a href="#">длинное название7</a>
+            </li>
+            <li>
+              <a href="#">длинное название8</a>
+            </li>
+          </ul>
+
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="inner">
+        <p class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          <br> sed de ousismod</p>
+
+        <form action="" name="registration" class="register">
+          <p class="control-label">Я ищу:</p>
+          <div class="form-btn">
+            <label class="container">
+              <input type="checkbox">
+              <span class="checkmark chechmark_first">ВАРИАНТ 1</span>
+            </label>
+            <label class="container">
+              <input type="checkbox">
+              <span class="checkmark chechmark_second">ВАРИАНТ 1</span>
+            </label>
+
+          </div>
+
+          <div class="form-group">
+            <label for="Student" class="control-label">Ваше имя:</label>
+            <div>
+              <input name="name" class="form-control" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="Email" class="control-label">Email: </label>
+            <div>
+              <input name="Email" type="email" class="form-control" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="Password" class="control-label">Придумайте пароль: </label>
+            <div>
+              <input name="Password" type="password" class="form-control" required>
+            </div>
+          </div>
+          <div class="confirm">
+            <input type="checkbox" name="option2" value="a2" required>
+            <p class="confirm__text">
+              Регистрируясь, вы подтверждаете, что вам уже исполнилось
+              <br> 18 лет и вы ознакомились с услугами пользования сайтом </p>
+          </div>
+          <div>
+            <button class="btn continue" name="regbutton" id="okButton" value="Register">ПРОДОЛЖИТЬ</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var invalidClassName = 'invalid'
+    var buttonClassName = 'valid'
+    var inputs = document.querySelectorAll('input')
+    var button = document.querySelector('.continue')
+    console.log(button)
+    console.log(inputs[3])
+    inputs.forEach(function (input) {
+      // Add a css class on submit when the input is invalid.
+      input.addEventListener('invalid', function () {
+        input.classList.add(invalidClassName)
+        button.classList.add(invalidClassName)
+      })
+
+      // Remove the class when the input becomes valid.
+      // 'input' will fire each time the user types
+      input.addEventListener('input', function () {
+        if (input.validity.valid) {
+          input.classList.remove(invalidClassName)
+
+        }
+      })
+      function checkValidity() {
+        const message = input.validity.valid
+          ? null
+          : getCustomMessage(input.type, input.validity, customMessages)
+        input.setCustomValidity(message || '')
+      }
+      input.addEventListener('input', checkValidity)
+      input.addEventListener('invalid', checkValidity)
+    })
+    const customMessages = {
+      valueMissing: 'Please fill out this field!',       // `required` attr
+      emailMismatch: 'Invalid value!',  // Invalid email
+      patternMismatch: 'Custom pattern mismatch',// `pattern` attr
+    }
+
+    function getCustomMessage(type, validity) {
+      if (validity.typeMismatch) {
+        return customMessages[`${type}Mismatch`]
+      } else {
+        for (const invalidKey in customMessages) {
+          if (validity[invalidKey]) {
+            return customMessages[invalidKey]
+          }
+        }
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>

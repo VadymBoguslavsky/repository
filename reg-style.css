@@ -1,0 +1,225 @@
+@font-face {
+  font-family: MuseoSans;
+  src: url(MuseoSansCyrl.otf);
+}
+
+.left {
+  background-image: url(img/depositphotos_32904189-stock-photo-pretty-girl.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.body-wrapper {
+  display: flex;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif
+}
+
+.right {
+  background-color: #1da7c0;
+  display: inline-block;
+  height: 100%;
+  padding-left: 13px;
+  margin-left: -2px;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.menu__items {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  margin: 10px 10px;
+}
+
+.menu li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3b3b3b;
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  padding: 15px 100px;
+  align-self: flex-end;
+  background-color: rgba(215, 209, 214, 0.6);
+  width: 100%;
+  justify-content: space-around;
+}
+
+.inner {
+  background-color: white;
+  margin-top: 142px;
+  padding-top: 100px;
+  position: relative;
+  padding-left: 65px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  color: #1da7c0;
+}
+
+.title::before {
+  content: url(img/Векторный\ смарт-объект.png);
+  position: absolute;
+  left: -45px;
+  top: 95px;
+  padding: 10px 8px 2px 8px;
+  background-color: white;
+  border: 13px solid #1da7c0;
+  border-radius: 50%
+}
+#email-field:invalid {
+  border-color: red;
+}
+.control-label {
+  font-weight: bold;
+  font-size: 18px;
+  color: #3b3b3b;
+  margin-top: 15px;
+}
+
+.begin {
+  margin-top: 170px;
+  margin-left: 65px;
+  text-transform: uppercase;
+  color: #3b3b3b;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 20px 10px;
+  width: 455px;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+}
+
+.form-group input.invalid {
+  border-color: red;
+}
+.form-group{
+  position: relative;
+}
+
+.register .form-group:nth-child(3) {
+  margin-top: 75px;
+}
+
+.form-btn button {
+  padding: 20px 60px 20px 87px;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form-group input:focus {
+  outline: none;
+}
+
+.confirm {
+  font-size: 12px;
+  font-family: MuseoSans;
+  position: relative;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.confirm input {
+  position: absolute;
+}
+.confirm__text{
+  margin-left: 20px;
+}
+.continue {
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 13px 30px;
+  border: 1px solid #1da7c0;
+  border-radius: 10px;
+  color: #aaa9a9;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.continue.valid {
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 13px 30px;
+  border: 1px solid #1da7c0;
+  border-radius: 10px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: #1da7c0;
+}
+.container {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  padding: 20px 60px 20px 87px;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+.chechmark_first{
+  top: 30px;
+  left: 0;
+  background-image: url(img/1.png);
+  background-repeat: no-repeat;
+  background-position: 50px 10px;
+}
+.chechmark_second{
+  top: 30px;
+  right: 0;
+  background-image: url(img/2.png);
+  background-repeat: no-repeat;
+  background-position: 50px 10px;
+}
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.validation-error{
+  color: red;
+  position: absolute;
+  left: 15px;
+  top: 40px;
+}
+.confirm .validation-error{
+  color: red;
+  position: absolute;
+  left: 20px;
+  top: -20px;
+}
