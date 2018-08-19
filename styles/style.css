@@ -40,7 +40,7 @@
 
 .menu{
   list-style: none;
-  padding: 25px 50px;
+  padding: 0 50px;
   align-self: flex-end;
   background-color: rgba(215, 209, 214, 0.6);
   width: 100%;
@@ -116,6 +116,9 @@
     position: relative;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
+  }
+  .menu {
+   padding: 10px 200px;
   }
 
 }

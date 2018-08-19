@@ -52,7 +52,7 @@
 }
 .menu {
   list-style: none;
-  padding: 15px 100px;
+  padding: 0 200px;
   align-self: flex-end;
   background-color: rgba(215, 209, 214, 0.6);
   width: 100%;
@@ -61,7 +61,7 @@
 
 .inner {
   background-color: white;
-  height: 75%;
+  height: 80%;
   position: relative;
   padding-left: 65px;
 }
@@ -94,7 +94,7 @@
   margin-top: 15px;
 }
 .red{
-  height: 25%;
+  height: 20%;
 }
 .begin {
   margin-top: 170px;
@@ -160,7 +160,6 @@
   border-radius: 10px;
   color: #aaa9a9;
   margin-top: 20px;
-  margin-bottom: 40px;
 }
 .continue.valid {
   cursor: pointer;
@@ -229,7 +228,7 @@
   top: -20px;
 }
 
-@media (max-width: 1800px) and (min-width: 1200px) {
+@media (max-width: 1800px) {
   .menu ul {
     position: relative;
     margin: 0 auto;
@@ -237,5 +236,14 @@
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
   }
-
+  .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 90px;
+    color: #1da7c0;
+  }
+  .menu {
+    padding: 10px 200px;
+   }
 }
