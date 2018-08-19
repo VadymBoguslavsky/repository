@@ -1,3 +1,6 @@
+
+
+
 .left {
   background-image: url(../img/depositphotos_32904189-stock-photo-pretty-girl.png);
   background-position: center;
@@ -22,12 +25,12 @@
   margin-left: -2px;
 }
 
-.menu li {
+.menu ul li {
   display: inline;
   margin: 0 10px;
 }
 
-.menu li a {
+.menu ul li a {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
@@ -35,7 +38,7 @@
   text-decoration: none;
 }
 
-.menu {
+.menu{
   list-style: none;
   padding: 25px 50px;
   align-self: flex-end;
@@ -44,20 +47,25 @@
   display: flex;
   justify-content: space-between;
 }
+.menu ul{
+  margin: 0 auto;
+}
 
 .inner {
   background-color: white;
-  margin-top: 220px;
-  padding-top: 115px;
+  height: 70%;
   position: relative;
 }
-
+.red{
+  height: 30%;
+}
 .title {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 32px;
   color: #fc5095;
   margin-left: 65px;
+  padding-top: 20%;
 }
 
 .title::before {
@@ -89,7 +97,7 @@
   font-weight: bold;
 }
 
-.begin button {
+.begin input {
   border: 1px solid #fc5095;
   padding: 25px 55px;
   border-radius: 20px;
@@ -101,7 +109,16 @@
 }
 
 
+@media (max-width: 1800px) and (min-width: 1200px) {
+  .menu ul {
+    position: relative;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+  }
 
+}
 
 
 

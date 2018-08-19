@@ -46,7 +46,10 @@
   color: #3b3b3b;
   text-decoration: none;
 }
-
+.menu_wrapper{
+  width: 100%;
+  display: flex;
+}
 .menu {
   list-style: none;
   padding: 15px 100px;
@@ -58,8 +61,7 @@
 
 .inner {
   background-color: white;
-  margin-top: 142px;
-  padding-top: 100px;
+  height: 80%;
   position: relative;
   padding-left: 65px;
 }
@@ -68,6 +70,7 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 30px;
+  padding-top: 110px;
   color: #1da7c0;
 }
 
@@ -90,7 +93,9 @@
   color: #3b3b3b;
   margin-top: 15px;
 }
-
+.red{
+  height: 20%;
+}
 .begin {
   margin-top: 170px;
   margin-left: 65px;
@@ -222,4 +227,15 @@
   position: absolute;
   left: 20px;
   top: -20px;
+}
+
+@media (max-width: 1800px) and (min-width: 1200px) {
+  .menu ul {
+    position: relative;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+  }
+
 }
