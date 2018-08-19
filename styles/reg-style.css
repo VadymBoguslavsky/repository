@@ -61,16 +61,17 @@
 
 .inner {
   background-color: white;
-  height: 80%;
+  height: 70%;
   position: relative;
   padding-left: 65px;
+  max-width: 100%;
+  padding-top: 94px;
 }
 
 .title {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 30px;
-  padding-top: 110px;
   color: #1da7c0;
 }
 
@@ -78,7 +79,7 @@
   content: url(../img/blue-heart.png);
   position: absolute;
   left: -45px;
-  top: 95px;
+  top: 70px;
   padding: 10px 8px 2px 8px;
   background-color: white;
   border: 13px solid #1da7c0;
@@ -122,7 +123,7 @@
 }
 
 .register .form-group:nth-child(3) {
-  margin-top: 75px;
+  margin-top: 60px;
 }
 
 .form-btn button {
@@ -143,7 +144,6 @@
   font-family: MuseoSans;
   position: relative;
   font-weight: bold;
-  margin-top: 20px;
 }
 .confirm input {
   position: absolute;
@@ -228,7 +228,7 @@
   top: -20px;
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1800px) and (min-width:1000px) {
   .menu ul {
     position: relative;
     margin: 0 auto;
@@ -240,10 +240,16 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 30px;
-    padding-top: 90px;
+    padding-top: 70px;
     color: #1da7c0;
   }
   .menu {
     padding: 10px 200px;
    }
+   .inner {
+    height: 80%;
+    max-width: 100%;
+    padding-top: 0;
+  }
+  
 }
